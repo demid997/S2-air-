@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ДОБАВЛЕНО для GitHub Pages -->
+    <meta name="description" content="CymkiBY — Премиум сумки со всего мира">
+    <meta name="keywords" content="сумки, премиум, доставка, Россия">
+    <meta property="og:title" content="CymkiBY — Премиум сумки со всего мира">
+    <meta property="og:description" content="Эксклюзивные сумки с доставкой">
+    <meta property="og:type" content="website">
+    <base href="./">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%91%9C%3C/text%3E%3C/svg%3E">
+    <!-- КОНЕЦ ДОБАВЛЕНИЙ -->
     <title>CymkiBY — Премиум сумки со всего мира</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -36,6 +45,7 @@
             overflow-x: hidden;
         }
 
+        /* ===== PRELOADER ===== */
         .preloader {
             position: fixed;
             top: 0; left: 0;
@@ -69,6 +79,7 @@
             50% { opacity: 1; transform: scale(1); }
         }
 
+        /* ===== HEADER ===== */
         header {
             position: fixed;
             top: 0; left: 0;
@@ -169,6 +180,7 @@
             color: var(--dark);
         }
 
+        /* ===== HERO ===== */
         .hero {
             height: 100vh;
             display: flex;
@@ -286,6 +298,7 @@
             transform: translateY(-3px);
         }
 
+        /* ===== SCROLL INDICATOR ===== */
         .scroll-indicator {
             position: absolute;
             bottom: 40px;
@@ -305,6 +318,7 @@
             60% { transform: translateX(-50%) translateY(-5px); }
         }
 
+        /* ===== ABOUT SECTION ===== */
         .about {
             padding: 120px 60px;
             background: var(--dark-2);
@@ -408,6 +422,7 @@
             font-size: 0.95rem;
         }
 
+        /* ===== STATS ===== */
         .stats {
             padding: 80px 60px;
             background: linear-gradient(135deg, rgba(212, 175, 55, 0.05), transparent);
@@ -442,6 +457,7 @@
             letter-spacing: 2px;
         }
 
+        /* ===== PRODUCTS ===== */
         .products {
             padding: 120px 60px;
             background: var(--dark);
@@ -571,6 +587,7 @@
             display: block;
         }
 
+        /* ===== TRACKING ===== */
         .tracking {
             padding: 120px 60px;
             background: var(--dark-2);
@@ -700,6 +717,7 @@
             box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
         }
 
+        /* ===== GUARANTEE ===== */
         .guarantee {
             padding: 120px 60px;
             background: var(--dark);
@@ -744,6 +762,7 @@
             font-weight: 700;
         }
 
+        /* ===== FOOTER ===== */
         footer {
             padding: 60px;
             background: var(--dark-2);
@@ -786,6 +805,7 @@
             color: var(--dark);
         }
 
+        /* ===== MODAL ===== */
         .modal-overlay {
             position: fixed;
             top: 0; left: 0;
@@ -935,6 +955,7 @@
             transform: none;
         }
 
+        /* ===== SUCCESS MODAL ===== */
         .success-modal {
             text-align: center;
             padding: 50px 35px;
@@ -999,6 +1020,7 @@
             border: 1px solid rgba(212, 175, 55, 0.2);
         }
 
+        /* ===== TOAST ===== */
         .toast {
             position: fixed;
             bottom: 30px; right: 30px;
@@ -1026,6 +1048,7 @@
             border-color: var(--success);
         }
 
+        /* ===== LOADING SPINNER ===== */
         .spinner {
             display: inline-block;
             width: 20px; height: 20px;
@@ -1041,6 +1064,7 @@
             to { transform: rotate(360deg); }
         }
 
+        /* ===== RESPONSIVE ===== */
         @media (max-width: 1024px) {
             .about-grid { grid-template-columns: repeat(2, 1fr); }
             .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
@@ -1074,6 +1098,7 @@
             .stat-item h3 { font-size: 2.5rem; }
         }
 
+        /* ===== SCROLLBAR ===== */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: var(--dark); }
         ::-webkit-scrollbar-thumb { background: var(--gold-dark); border-radius: 4px; }
@@ -1081,10 +1106,12 @@
     </style>
 </head>
 <body>
+    <!-- PRELOADER -->
     <div class="preloader" id="preloader">
         <span class="preloader-text">CymkiBY</span>
     </div>
 
+    <!-- HEADER -->
     <header id="header">
         <a href="#" class="logo">CymkiBY</a>
         <nav>
@@ -1101,6 +1128,7 @@
         </div>
     </header>
 
+    <!-- HERO -->
     <section class="hero" id="home">
         <div class="hero-content">
             <span class="hero-badge">Премиум качество с 2025 года</span>
@@ -1116,6 +1144,7 @@
         </div>
     </section>
 
+    <!-- ABOUT -->
     <section class="about" id="about">
         <div class="section-header">
             <span class="subtitle">Почему мы</span>
@@ -1141,6 +1170,7 @@
         </div>
     </section>
 
+    <!-- STATS -->
     <section class="stats">
         <div class="stats-grid">
             <div class="stat-item">
@@ -1162,6 +1192,7 @@
         </div>
     </section>
 
+    <!-- PRODUCTS -->
     <section class="products" id="catalog">
         <div class="section-header">
             <span class="subtitle">Каталог</span>
@@ -1176,6 +1207,7 @@
         </div>
     </section>
 
+    <!-- TRACKING -->
     <section class="tracking" id="tracking">
         <div class="section-header">
             <span class="subtitle">Отслеживание</span>
@@ -1193,6 +1225,7 @@
         </div>
     </section>
 
+    <!-- GUARANTEE -->
     <section class="guarantee" id="guarantee">
         <div class="guarantee-box">
             <div class="shield-icon">
@@ -1209,6 +1242,7 @@
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
         <a href="#" class="logo">CymkiBY</a>
         <div class="social-links">
@@ -1219,6 +1253,7 @@
         <p>&copy; 2025-2026 CymkiBY. Все права защищены. Премиум сумки со всего мира.</p>
     </footer>
 
+    <!-- ORDER MODAL -->
     <div class="modal-overlay" id="orderModal">
         <div class="modal">
             <div class="modal-header">
@@ -1277,6 +1312,7 @@
         </div>
     </div>
 
+    <!-- SUCCESS MODAL -->
     <div class="modal-overlay" id="successModal">
         <div class="modal">
             <div class="success-modal">
@@ -1298,25 +1334,38 @@
         </div>
     </div>
 
+    <!-- TOAST -->
     <div class="toast" id="toast"></div>
 
+    <!-- FIREBASE SDK -->
     <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
 
     <script>
+        // ===== FIREBASE CONFIG =====
         const firebaseConfig = {
             databaseURL: "https://cymkiby-default-rtdb.firebaseio.com/"
         };
 
-        firebase.initializeApp(firebaseConfig);
-        const db = firebase.database();
+        // ДОБАВЛЕНО: безопасная инициализация Firebase
+        let db = null;
+        try {
+            firebase.initializeApp(firebaseConfig);
+            db = firebase.database();
+            console.log('✅ Firebase подключен');
+        } catch (error) {
+            console.error('❌ Ошибка Firebase:', error);
+            showToast('Ошибка подключения к базе данных', 'error');
+        }
 
+        // ===== PRELOADER =====
         window.addEventListener('load', () => {
             setTimeout(() => {
                 document.getElementById('preloader').classList.add('hidden');
             }, 1500);
         });
 
+        // ===== HEADER SCROLL =====
         window.addEventListener('scroll', () => {
             const header = document.getElementById('header');
             if (window.scrollY > 50) {
@@ -1326,6 +1375,7 @@
             }
         });
 
+        // ===== SMOOTH SCROLL =====
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -1336,6 +1386,7 @@
             });
         });
 
+        // ===== TOAST NOTIFICATION =====
         function showToast(message, type = '') {
             const toast = document.getElementById('toast');
             toast.textContent = message;
@@ -1345,9 +1396,21 @@
             }, 4000);
         }
 
+        // ===== LOAD PRODUCTS =====
         function loadProducts() {
             const grid = document.getElementById('productsGrid');
             
+            // ДОБАВЛЕНО: проверка подключения Firebase
+            if (!db) {
+                grid.innerHTML = `
+                    <div class="no-products">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <p>Нет подключения к базе данных. Попробуйте позже.</p>
+                    </div>
+                `;
+                return;
+            }
+
             db.ref('products').on('value', (snapshot) => {
                 const products = snapshot.val();
                 grid.innerHTML = '';
@@ -1395,6 +1458,7 @@
             });
         }
 
+        // ===== ORDER MODAL =====
         let currentOrderProduct = {};
 
         function openOrderModal(productId, productName, productPrice) {
@@ -1424,6 +1488,7 @@
             document.body.style.overflow = '';
         }
 
+        // Close modal on overlay click
         document.querySelectorAll('.modal-overlay').forEach(overlay => {
             overlay.addEventListener('click', (e) => {
                 if (e.target === overlay) {
@@ -1433,6 +1498,7 @@
             });
         });
 
+        // ===== UPDATE DELIVERY OPTIONS =====
         function updateDelivery() {
             const country = document.getElementById('country').value;
             const deliveryGroup = document.getElementById('deliveryGroup');
@@ -1455,7 +1521,14 @@
             }
         }
 
+        // ===== SUBMIT ORDER =====
         function submitOrder() {
+            // ДОБАВЛЕНО: проверка Firebase
+            if (!db) {
+                showToast('База данных недоступна. Попробуйте позже.', 'error');
+                return;
+            }
+
             const fullName = document.getElementById('fullName').value.trim();
             const phone = document.getElementById('phone').value.trim();
             const passport = document.getElementById('passport').value.trim();
@@ -1464,6 +1537,7 @@
             const address = document.getElementById('address').value.trim();
             const comment = document.getElementById('comment').value.trim();
 
+            // Validation
             if (!fullName || !phone || !passport || !country || !delivery || !address) {
                 showToast('Пожалуйста, заполните все обязательные поля!', 'error');
                 return;
@@ -1484,6 +1558,7 @@
                 return;
             }
 
+            // Generate tracking number
             const trackNumber = 'CBY-' + Date.now().toString(36).toUpperCase() + '-' + Math.random().toString(36).substr(2, 4).toUpperCase();
 
             const orderData = {
@@ -1508,6 +1583,7 @@
             btn.disabled = true;
             btn.innerHTML = '<span class="spinner"></span> Оформление...';
 
+            // Save to Firebase
             db.ref('orders').push(orderData)
                 .then(() => {
                     closeModal('orderModal');
@@ -1516,6 +1592,7 @@
                     document.body.style.overflow = 'hidden';
                     showToast('Заказ успешно оформлен!', 'success');
                     
+                    // Reset form
                     document.getElementById('orderForm').reset();
                 })
                 .catch((error) => {
@@ -1528,7 +1605,14 @@
                 });
         }
 
+        // ===== TRACK ORDER =====
         function trackOrder() {
+            // ДОБАВЛЕНО: проверка Firebase
+            if (!db) {
+                showToast('База данных недоступна', 'error');
+                return;
+            }
+
             const trackInput = document.getElementById('trackInput').value.trim();
             const resultDiv = document.getElementById('trackingResult');
             const statusDiv = document.getElementById('trackingStatus');
@@ -1542,6 +1626,7 @@
             statusDiv.innerHTML = '<p style="text-align:center; color:var(--gray);"><span class="spinner" style="border-color:rgba(212,175,55,0.3); border-top-color:var(--gold);"></span> Поиск...</p>';
             resultDiv.classList.add('active');
 
+            // Search in orders
             db.ref('orders').orderByChild('trackNumber').equalTo(trackInput).once('value')
                 .then((snapshot) => {
                     if (snapshot.exists()) {
@@ -1549,6 +1634,7 @@
                         const order = Object.values(orders)[0];
                         displayTrackingStatus(order, statusDiv);
                     } else {
+                        // Search in completed orders
                         return db.ref('completed_orders').orderByChild('trackNumber').equalTo(trackInput).once('value');
                     }
                 })
@@ -1611,10 +1697,12 @@
             `;
         }
 
+        // Enter key for tracking
         document.getElementById('trackInput').addEventListener('keypress', (e) => {
             if (e.key === 'Enter') trackOrder();
         });
 
+        // ===== PHONE MASK =====
         document.getElementById('phone').addEventListener('input', function(e) {
             let value = e.target.value.replace(/\D/g, '');
             if (value.length > 0) {
@@ -1630,8 +1718,10 @@
             }
         });
 
+        // ===== INIT =====
         loadProducts();
 
+        // ===== INTERSECTION OBSERVER FOR ANIMATIONS =====
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
